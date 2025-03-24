@@ -31,4 +31,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: akulllvlllad/node-app:latest
+          tags: |
+            ghcr.io/akulllvlllad/node-app:latest
+            ghcr.io/akulllvlllad/node-app:${{ github.sha }}
